@@ -1,8 +1,11 @@
 ---
-layout: post
-title: "Building a Postgres Plugin"
-date: 2024-04-09
-categories: databases
+title: "Post: Standard"
+excerpt_separator: "<!--more-->"
+categories:
+  - Database
+tags:
+  - rust
+  - database
 ---
 
 This project is simply a Postgres to Redis connector built as a Postgres extension. It intercepts all SELECT and UPDATE queries and inserts/updates relevant data into a Redis cache. The project repo can be found [here](https://github.com/systemEng-Learning/postgres-redis).
