@@ -1,5 +1,6 @@
 ---
 title: "Building a Postgres Plugin"
+last_modified_at: 2024-04-15
 excerpt_separator: "<!--more-->"
 categories:
   - Database
@@ -36,7 +37,7 @@ We also tried, to fetch updated tuples, but was very difficult for some reason t
 * Mar 11, 2024 - Mar 17, 2024: The working solution only worked for numbers comparison and didn't support ORs and ANDs in the WHERE clause. The porting task was abandoned and the working solution was refactored to make it work on a wider range of WHERE clause types. This was where the abandoned porting task really helped because we added some of its code to the working solution. After this was done, we added the redis functionality. We were able to confirm that the extension worked, Yay!
 * Mar 18, 2024 - Mar 24, 2024: We wanted to make the extension configurable. Thankfully, pgrx provides some [structs](https://docs.rs/pgrx/latest/pgrx/guc/index.html) to achieve this. In addition, looking at [zombodb codebase](https://github.com/zombodb/zombodb/blob/1416c99a4885f1cfe5e7bd86b935e89e6d6ba431/src/gucs/mod.rs) helped us figured out how to use them. We went with a simple string format for redis url and a json string for the table-related stuffs. To be honest, we went with json as an excuse to use serde :-).
 * Apr 1, 2024 - Apr 7, 2024: Thankfully wiser heads prevailed and we went with a simple configuration option instead. At least our "use serde library" itch was scratched.
-* Apr 8, 2024 - now: Clean up the codebase, add comments, add a license, and write this post.
+* Apr 8, 2024 - Apr 15, 2024: Clean up the codebase, add comments, add a license, and write this post.
 
 ### Participants' Writeups
 * [Goodness](https://goodyduru.github.io/database/2024/04/15/what-i-learned-from-building-a-postgres-extension-in-rust.html)
