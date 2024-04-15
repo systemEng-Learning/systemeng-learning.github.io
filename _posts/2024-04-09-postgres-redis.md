@@ -40,7 +40,7 @@ We also tried, to fetch updated tuples, but was very difficult for some reason t
 
 ### Participants' Writeups
 * [Goodness](https://goodyduru.github.io/database/2024/04/15/what-i-learned-from-building-a-postgres-extension-in-rust.html)
-* [Steve](#)
+* [Steve](https://steveoni.github.io/database/2024/04/15/postgres-redis-extension-in-rust.html)
 
 ### Conclusion
 This admittedly limited project was a massive success. It really improved our understanding of Postgres and Rust. Being forced to dive into Postgres source code schooled us on world class software design. Looking at the pgrx source code and writing this project taught us a lot on how to use Rust. We are glad to have done this project.
