@@ -1,5 +1,5 @@
 ---
-title: "Post: Standard"
+title: "Building a Postgres Plugin"
 excerpt_separator: "<!--more-->"
 categories:
   - Database
@@ -8,7 +8,7 @@ tags:
   - database
 ---
 
-This project is simply a Postgres to Redis connector built as a Postgres extension. It intercepts all SELECT and UPDATE queries and inserts/updates relevant data into a Redis cache. The project repo can be found [here](https://github.com/systemEng-Learning/postgres-redis).
+This project is simply a Postgres to Redis connector built as a Postgres extension. It intercepts all SELECT and UPDATE queries and inserts/updates relevant data into a Redis cache. <!--more--> The project repo can be found [here](https://github.com/systemEng-Learning/postgres-redis).
 
 This project's purpose was to improve our understanding of Postgres Internals and Rust. We needed an excuse to dive into Postgres's source code to understand how well-designed and reliable software applications are built. This project provided that excuse. We are new users of Rust and we wanted something to build with it. This project provided that something. 
 
