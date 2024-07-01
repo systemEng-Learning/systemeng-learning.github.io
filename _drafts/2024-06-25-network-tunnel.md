@@ -20,20 +20,20 @@ In order to fufill the goal of this project, we created 3 milestones. The milest
 * Support ipv6 and encryption.
 * Implement localhost tunneling.
 
-We implemented the project in Rust which in a way helped us gain understanding of networking in Rust. The result of this project can be found [here](https://github.com/systemEng-Learning/simple-wireguard). We worked separately on our own individual modules. *We don't advise anyone to use this project for production. It was strictly made for learning purpose.* 
+We implemented the project in Rust which in a way helped us gain understanding of networking in Rust. The result of this project can be found [here](https://github.com/systemEng-Learning/simple-vpn). We worked separately on our own individual modules. *We don't advise anyone to use this project for production. It was strictly made for learning purpose.* 
 
 The below progress log is retrospective, so some of the details might not be as accurate due to memory failure :-).
 
 ### Log
-* Apr 14 - Apr 24, 2024: Didn't know anything about tunnel devices, tunnelling and so on. We had to carry out some research. We played around with Wireguard and read several articles on it. We felt understanding network tunnels would give us a clearer understanding of Wireguard. We did, and we were right. Some of the articles that really helped us are found in this [Github Issue](https://github.com/systemEng-Learning/simple-wireguard/issues/1).
-* Apr 17 - May 10, 2024: Just reading amazing articles wouldn't be enough for us. We had to experiment with tun/tap devices on linux and analyzing network packets. This wasn't part of the milestones, they were just prototypical code. We used Python because of its ease of use and our familiarity with it. These are the [scripts](https://github.com/systemEng-Learning/simple-wireguard/tree/main/playtun).
+* Apr 14 - Apr 24, 2024: Didn't know anything about tunnel devices, tunnelling and so on. We had to carry out some research. We played around with Wireguard and read several articles on it. We felt understanding network tunnels would give us a clearer understanding of Wireguard. We did, and we were right. Some of the articles that really helped us are found in this [Github Issue](https://github.com/systemEng-Learning/simple-vpn/issues/1).
+* Apr 17 - May 10, 2024: Just reading amazing articles wouldn't be enough for us. We had to experiment with tun/tap devices on linux and analyzing network packets. This wasn't part of the milestones, they were just prototypical code. We used Python because of its ease of use and our familiarity with it. These are the [scripts](https://github.com/systemEng-Learning/simple-vpn/tree/main/playtun).
 * May 20 - May 23, 2024: Steve implemented a simple tun device software that could process ping request.
 * May 24 - May 31, 2024: Goodness implemented his own simple tun device that could work as a vpn client and vpn server. 
-Encryption was also added. The major pain about adding encryption was recalculating IPv4 packet header checksum. Thankfully, [etherparse](https://github.com/JulianSchmid/etherparse) provided helpful functions for that. Here's the [doc](https://github.com/systemEng-Learning/simple-wireguard/tree/main/tunnel-cli) for the software.
-* May 31, 2024: Steve upgraded his tunnelling software to one that could act as a vpn client and server. It even works with docker 😎. Here's the [doc](https://github.com/systemEng-Learning/simple-wireguard/tree/main/tunnel-indocker).
+Encryption was also added. The major pain about adding encryption was recalculating IPv4 packet header checksum. Thankfully, [etherparse](https://github.com/JulianSchmid/etherparse) provided helpful functions for that. Here's the [doc](https://github.com/systemEng-Learning/simple-vpn/tree/main/tunnel-cli) for the software.
+* May 31, 2024: Steve upgraded his tunnelling software to one that could act as a vpn client and server. It even works with docker 😎. Here's the [doc](https://github.com/systemEng-Learning/simple-vpn/tree/main/tunnel-indocker).
 * Jun 3 - Jun 5, 2024: Goodness added ipv6 support to his tun package. 
-* Jun 10 - Jun 20, 2024: Steve implemented a L4 localhost tunnelling software using mio. Here's the [doc](https://github.com/systemEng-Learning/simple-wireguard/tree/main/tunnel-indocker/localhost-tunnel).
-* Jun 12 - Jun 17, 2024: Goodness implemented a L3 localhost tunnelling software. Here's the [doc](https://github.com/systemEng-Learning/simple-wireguard/tree/main/tunnel-local).
+* Jun 10 - Jun 20, 2024: Steve implemented a L4 localhost tunnelling software using mio. Here's the [doc](https://github.com/systemEng-Learning/simple-vpn/tree/main/tunnel-indocker/localhost-tunnel).
+* Jun 12 - Jun 17, 2024: Goodness implemented a L3 localhost tunnelling software. Here's the [doc](https://github.com/systemEng-Learning/simple-vpn/tree/main/tunnel-local).
 * Jun 17 - *: Play with Wireguard again, but with more knowledge this time :-), Fix bugs, add readme.
 
 ### Participants' Writeups
