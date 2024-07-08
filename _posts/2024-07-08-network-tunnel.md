@@ -1,6 +1,6 @@
 ---
-title: "Building a Postgres Plugin"
-last_modified_at: 2024-06-25
+title: "Building a Network Tunnel"
+last_modified_at: 2024-07-08
 excerpt_separator: "<!--more-->"
 categories:
   - Networking
@@ -37,8 +37,8 @@ Encryption was also added. The major pain of adding encryption was recalculating
 * Jun 17 - Jul 8, 2024: Play with Wireguard again, but with more knowledge this time :-), Fix bugs, add readme, and publish articles.
 
 ### Participants' Writeups
-* [Goodness](#)
-* [Steve](#)
+* [Goodness](https://goodyduru.github.io/networking/2024/07/08/what-i-learned-from-building-a-network-tunnel.html)
+* [Steve](https://steveoni.github.io/network/2024/07/05/network-tunnel-in-rust.html)
 
 ### Conclusion
 This project was a roundabout way of helping us understand Wireguard better. We did it! Now we can explain and talk about it at an admittedly nerdy dinner table. We learnt so much about low-level networking tools and concepts. Imagine dealing with packet checksum issues? It was fun and now we can say our understanding of those cool low-level networking blog articles has improved to 80%!
